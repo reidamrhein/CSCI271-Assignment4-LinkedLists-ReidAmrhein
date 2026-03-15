@@ -1,7 +1,7 @@
 /*************************************************************************
 * Programming Assignment 4 for CSCI 271-001 Spring 2026
 *
-* Author: William Klement (REPLACE THIS WITH YOUR OWN NAME)
+* Author: Reid Amrhein 
 * OS: Ubuntu Debian Linux 21.1
 * Compiler: g++
 * Date: March 9, 2026
