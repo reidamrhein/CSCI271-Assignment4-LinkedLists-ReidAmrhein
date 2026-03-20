@@ -2,7 +2,7 @@
 * Programming Assignment 4 for CSCI 271-001 Spring 2026
 *
 * Author: Reid Amrhein 
-* OS: Ubuntu Debian Linux 21.1
+* OS: Mac
 * Compiler: g++
 * Date: March 9, 2026
 *
@@ -38,6 +38,11 @@ template <typename T> class Node{
 
     ~Node(){
       // call destructors for the rest of the list
+      // Question 1
+      if(this->next != NULL) {
+        delete this->next;
+      }
+  }
 
 /********************************************************************************
         // replace the following line with your code!!!!!
