@@ -38,15 +38,14 @@ template <typename T> class Node{
 
     ~Node(){
       // call destructors for the rest of the list
-      // Question 1
-      if (this->next != NULL) {
-        delete this->next;
-      }
-  }
 
 /********************************************************************************
         // replace the following line with your code!!!!!
 *********************************************************************************/
+      // Question 1
+      if (this->next != NULL) {
+        delete this->next;
+      }
       cout<<"    ~Node(): you need to write this method <-------------"<<endl;
 
       // DO NOT REMOVE THE NEXT LINE: keep at end of your destructor method!!
