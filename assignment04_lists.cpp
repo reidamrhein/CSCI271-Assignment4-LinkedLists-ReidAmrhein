@@ -196,9 +196,9 @@ template <typename T> class List{
 /********************************************************************************
         // replace the following line with your code!!!!!
 *********************************************************************************/
-        cout<<"    removeLast(): you need to write this method <-------------"<<endl;
+      // Question 5
 
-          // cout<<"last item removed"<<endl; // your method MUST use this!
+        cout<<"last item removed"<<endl; // your method MUST use this!
       }
 
       // removeAt(index) deletes the element and its node found at 
@@ -248,13 +248,10 @@ template <typename T> class List{
         Node<T>* temp = head;
         head = head->next;
         delete temp;
-        
-        cout << "Front item removed" << endl;
+
+        cout<< "front item removed" <<endl; // your method MUST use this!
         }
-
-        cout<<"    removeFront(): you need to write this method <-------------"<<endl;
-
-          // cout<<"front item removed"<<endl; // your method MUST use this!
+      
 
       }
 
