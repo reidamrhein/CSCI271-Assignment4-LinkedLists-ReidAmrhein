@@ -103,9 +103,9 @@ template <typename T> class List{
 /********************************************************************************
         // replace the following line with your code!!!!!
 *********************************************************************************/
-        cout<<"    addFront(item): you need to write this method <-------------"<<endl;
-
-        // cout<<"new node added at front !"<<endl; // your method MUST use this!
+        // Question 4
+  
+        cout<< "new node added at front !" <<endl; // your method MUST use this!
       }
 
       // addAt(index, item) creates and adds a new element node containing 
