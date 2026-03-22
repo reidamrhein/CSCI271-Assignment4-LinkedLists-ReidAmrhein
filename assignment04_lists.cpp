@@ -70,6 +70,11 @@ template <typename T> class List{
 /********************************************************************************
         // replace the following line with your code!!!!!
 *********************************************************************************/
+        // Question 2
+        if(this->head != NULL) {
+          delete this->head;
+        }
+        
         cout<<"    ~List(): you need to write this method <-------------"<<endl;
 
         DN += 1;  // keep track of deallocations
