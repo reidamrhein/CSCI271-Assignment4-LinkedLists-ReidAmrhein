@@ -39,7 +39,7 @@ template <typename T> class Node{
     ~Node(){
       // call destructors for the rest of the list
       // Question 1
-      if(this->next != NULL) {
+      if (this->next != NULL) {
         delete this->next;
       }
   }
@@ -71,7 +71,7 @@ template <typename T> class List{
         // replace the following line with your code!!!!!
 *********************************************************************************/
         // Question 2
-        if(this->head != NULL) {
+        if (this->head != NULL) {
           delete this->head;
         }
         
@@ -236,6 +236,12 @@ template <typename T> class List{
 /********************************************************************************
         // replace the following line with your code!!!!!
 *********************************************************************************/
+        // Question 6
+        if (this->isEmpty()) {
+          cout<< "The list is empty !" <<endl;
+        return;
+        }
+
         cout<<"    removeFront(): you need to write this method <-------------"<<endl;
 
           // cout<<"front item removed"<<endl; // your method MUST use this!
