@@ -195,7 +195,7 @@ template <typename T> class List{
 *********************************************************************************/
       // Question 5
         // if list is empty
-        if (!head) {
+        if (this->isEmpty()) {
           cout << "The list is empty !" <<endl;
           return;
         }
@@ -265,14 +265,15 @@ template <typename T> class List{
         // Question 6
         if (this->isEmpty()) {
           cout<< "The list is empty !" <<endl;
-        return;
+          return;
+        }
 
         Node<T>* temp = head;
         head = head->next;
         delete temp;
 
         cout<< "front item removed" <<endl; // your method MUST use this!
-        }
+        
       
 
       }
@@ -284,7 +285,11 @@ template <typename T> class List{
 /********************************************************************************
         // replace the following line with your code!!!!!
 *********************************************************************************/
-        cout<<"    getAt(): you need to write this method <-------------"<<endl;
+        // Question 7
+
+        Node<T>* temp = head;
+        
+        res = temp->element;
 
         return res;  // return the results -- YOU MUST USE THIS!!!!
       }
