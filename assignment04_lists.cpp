@@ -46,7 +46,6 @@ template <typename T> class Node{
       if (this->next != NULL) {
         delete this->next;
       }
-      cout<<"    ~Node(): you need to write this method <-------------"<<endl;
 
       // DO NOT REMOVE THE NEXT LINE: keep at end of your destructor method!!
       DN += 1;  // keep track of deallocations
@@ -73,8 +72,6 @@ template <typename T> class List{
         if (this->head != NULL) {
           delete this->head;
         }
-        
-        cout<<"    ~List(): you need to write this method <-------------"<<endl;
 
         DN += 1;  // keep track of deallocations
       }
@@ -197,17 +194,31 @@ template <typename T> class List{
         // replace the following line with your code!!!!!
 *********************************************************************************/
       // Question 5
-        if (this->isEmpty()) {
+        // if list is empty
+        if (!head) {
           cout << "The list is empty !" <<endl;
-        return;
+          return;
         }
 
         // If only one node in the list
         if (head->next == NULL) {
           delete head;
           head = NULL;
+          // deletes the head since it is technically the last object in the list
         }
-  
+
+        else {
+          Node<T>* temp = this->head;
+          // Find the second to last node
+          while (temp->next->next != NULL) {
+            temp = temp->next;
+            // Basically, this while loop keeps going until the end of the list is reached
+          }
+          // Deletes the last node
+          delete temp->next;
+          // still need linked list to ensure temp is set to the last item in the list
+          temp->next = NULL;
+        }
 
         cout<<"last item removed"<<endl; // your method MUST use this!
       }
