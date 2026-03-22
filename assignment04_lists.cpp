@@ -202,6 +202,13 @@ template <typename T> class List{
         return;
         }
 
+        // If only one node in the list
+        if (head->next == NULL) {
+          delete head;
+          head = NULL;
+        }
+  
+
         cout<<"last item removed"<<endl; // your method MUST use this!
       }
 
