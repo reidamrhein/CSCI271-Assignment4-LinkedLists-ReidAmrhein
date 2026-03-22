@@ -104,6 +104,11 @@ template <typename T> class List{
         // replace the following line with your code!!!!!
 *********************************************************************************/
         // Question 4
+        Node<T>* newNode = new Node<T>();
+        newNode->element = item;
+  
+        newNode->next = this->head;
+        head = newNode;
   
         cout<< "new node added at front !" <<endl; // your method MUST use this!
       }
