@@ -88,9 +88,9 @@ template <typename T> class List{
 /********************************************************************************
         // replace the following line with your code!!!!!
 *********************************************************************************/
-        cout<<"    addLast(item): you need to write this method <-------------"<<endl;
+        // Question 3
 
-        // cout<<"new node added at back!"<<endl; // your method MUST use this!
+        cout<< "new node added at back!" <<endl; // your method MUST use this!
       }
 
       // addFront(item) creates and adds a new element node 
