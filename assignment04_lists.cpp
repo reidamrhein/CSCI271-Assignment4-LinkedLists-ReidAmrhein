@@ -197,6 +197,10 @@ template <typename T> class List{
         // replace the following line with your code!!!!!
 *********************************************************************************/
       // Question 5
+        if (this->isEmpty()) {
+          cout << "The list is empty !" <<endl;
+        return;
+        }
 
         cout<<"last item removed"<<endl; // your method MUST use this!
       }
