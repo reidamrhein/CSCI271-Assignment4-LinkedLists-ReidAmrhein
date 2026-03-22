@@ -239,6 +239,8 @@ template <typename T> class List{
         if (this->isEmpty()) {
           cout<< "The list is empty !" <<endl;
         return;
+
+        cout << "Front item removed" << endl;
         }
 
         cout<<"    removeFront(): you need to write this method <-------------"<<endl;
