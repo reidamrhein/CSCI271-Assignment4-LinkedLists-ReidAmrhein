@@ -240,6 +240,10 @@ template <typename T> class List{
           cout<< "The list is empty !" <<endl;
         return;
 
+        Node<T>* temp = head;
+        head = head->next;
+        delete temp;
+        
         cout << "Front item removed" << endl;
         }
 
