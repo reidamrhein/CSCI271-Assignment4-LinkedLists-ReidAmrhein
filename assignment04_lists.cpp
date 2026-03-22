@@ -286,6 +286,11 @@ template <typename T> class List{
         // replace the following line with your code!!!!!
 *********************************************************************************/
         // Question 7
+        // if list is empty
+        if (this->isEmpty()) {
+          cout<<"linked list is empty !"<<endl;
+          return res;
+        }
 
         Node<T>* temp = head;
         
