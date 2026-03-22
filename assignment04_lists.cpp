@@ -298,6 +298,13 @@ template <typename T> class List{
         }
 
         Node<T>* temp = head;
+        int count = 0;
+  
+        while(count < index) {
+          temp = temp->next;
+          count++;
+        // while countis within the index, this program keeps running
+        }
         
         res = temp->element;
 
