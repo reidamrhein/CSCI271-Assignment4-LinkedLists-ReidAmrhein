@@ -72,7 +72,8 @@ template <typename T> class List{
         // Question 2
         // Delete the head node, which will recursively delete all nodes
         if (this->head != NULL) {
-          delete this->head; // This triggers a Node destructor chain
+          delete this->head;
+          this->head = NULL; // prevent double delete (i was having this issue while testing)
         }
 
         DN += 1;  // keep track of deallocations
