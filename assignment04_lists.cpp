@@ -93,6 +93,10 @@ template <typename T> class List{
         newNode->element = item;
         newNode->next = NULL;
 
+        if (head == NULL){
+          head = newNode;
+        }
+
         cout<< "new node added at back!" <<endl; // your method MUST use this!
       }
 
