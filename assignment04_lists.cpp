@@ -74,8 +74,6 @@ template <typename T> class List{
         if (this->head != NULL) {
           delete this->head;
           this->head = NULL; // prevent double delete (i was having this issue while testing)
-          DN += 1; // i had more deallocations than allocations, so this SHOULD
-          // only count if the deletion actually happened.
         }
 
         DN += 1;  // keep track of deallocations
