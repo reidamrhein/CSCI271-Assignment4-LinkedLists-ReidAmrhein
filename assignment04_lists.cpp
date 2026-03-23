@@ -74,6 +74,8 @@ template <typename T> class List{
         if (this->head != NULL) {
           delete this->head;
           this->head = NULL; // prevent double delete (i was having this issue while testing)
+          DN += 1; // i had more deallocations than allocations, so this SHOULD
+          // only count if the deletion actually happened.
         }
 
         DN += 1;  // keep track of deallocations
@@ -270,7 +272,7 @@ template <typename T> class List{
           Node<T>* pNode = temp->next; // hold on to that node temporarily 
           temp->next = pNode->next;    // relink around the removed node
           pNode->next = NULL;          // disconnect that node form the list
-          pNode->~Node();              // destroy the node
+          delete pNode;                // destroy the node
           cout<<"item removed at index "<<index<<endl;
         }
       }
