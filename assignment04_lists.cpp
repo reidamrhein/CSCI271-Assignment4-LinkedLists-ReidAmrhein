@@ -304,12 +304,12 @@ template <typename T> class List{
         // Question 7
         // if list is empty
         if (this->isEmpty()) {
-          cout << "linked list is empty !" <<endl;
+          cout << "linked list is empty!" <<endl;
           return res;
         }
         // checks for index out of bounds
         if (index < 0 || index >= this->size()) {
-          cout<<"index out of bound !"<<endl;
+          cout << "index out of bound!" <<endl;
           return res;
         }
 
