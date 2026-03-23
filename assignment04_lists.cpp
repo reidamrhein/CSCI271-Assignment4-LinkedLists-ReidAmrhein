@@ -97,6 +97,15 @@ template <typename T> class List{
           head = newNode;
         }
 
+        else {
+          Node<T>* temp = this->head;
+          while(temp->next != NULL) {
+            temp = temp->next;
+          // this loop keeps running until the last item in the list is reached (NULL)
+          }
+          temp->next = newNode;
+        }
+
         cout<< "new node added at back!" <<endl; // your method MUST use this!
       }
 
