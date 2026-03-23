@@ -43,8 +43,9 @@ template <typename T> class Node{
         // replace the following line with your code!!!!!
 *********************************************************************************/
       // Question 1
+      // delete all following nodes
       if (this->next != NULL) {
-        delete this->next;
+        delete this->next; // This will trigger ~Node() for the next node
       }
 
       // DO NOT REMOVE THE NEXT LINE: keep at end of your destructor method!!
@@ -69,8 +70,9 @@ template <typename T> class List{
         // replace the following line with your code!!!!!
 *********************************************************************************/
         // Question 2
+        // Delete the head node, which will recursively delete all nodes
         if (this->head != NULL) {
-          delete this->head;
+          delete this->head; // This triggers a Node destructor chain
         }
 
         DN += 1;  // keep track of deallocations
@@ -233,7 +235,7 @@ template <typename T> class List{
           // Deletes the last node
           delete temp->next;
           // still need linked list to ensure temp is set to the last item in the list
-          temp->next = NULL;
+          temp->next = NULL; // sets new last node's next to NULL
         }
 
         cout<<"last item removed"<<endl; // your method MUST use this!
@@ -289,8 +291,6 @@ template <typename T> class List{
         delete temp;
 
         cout<< "front item removed" <<endl; // your method MUST use this!
-        
-      
 
       }
 
